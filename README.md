@@ -16,3 +16,12 @@ This repository contains the capstone project to build an end-to-end data pipeli
 - Data dictionary added: `docs/data_dictionary.md`
 - Initial EDA and small cleaned sample saved: `data/processed/sample_clean.csv`
 - Next: implement `src/data_cleaning.py` for thorough cleaning 
+
+
+# Data Cleaning & Validation
+- Added `src/data_cleaning.py` script.
+- Removed duplicates, fixed data types, handled nulls.
+- Added computed fields (margin %, discount).
+- Exported cleaned data in CSV + Parquet formats.
+  
+- Next: Implement ETL with Airflow 
