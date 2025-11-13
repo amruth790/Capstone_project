@@ -24,4 +24,21 @@ This repository contains the capstone project to build an end-to-end data pipeli
 - Added computed fields (margin %, discount).
 - Exported cleaned data in CSV + Parquet formats.
   
-- Next: Implement ETL with Airflow 
+- Next: Implement ETL with Airflow
+
+# Capstone ETL Pipeline with Apache Airflow
+
+This project implements a simple **ETL workflow** using Apache Airflow.
+
+##  Overview
+- Extract sales data from CSV  
+- Transform data (add total sales column)  
+- Load into final CSV output  
+
+## Tools
+- **Apache Airflow** (workflow orchestration)
+- **Pandas** (data processing)
+- **Docker Compose** (Airflow environment)
+
+##  DAG Workflow
+`extract_data` → `transform_data` → `load_data`
