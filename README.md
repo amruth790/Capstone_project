@@ -42,3 +42,18 @@ This project implements a simple **ETL workflow** using Apache Airflow.
 
 ##  DAG Workflow
 `extract_data` → `transform_data` → `load_data`
+
+# Big Data Processing with Apache Spark
+
+In this part of the capstone project, I integrated Apache Spark into the ETL pipeline to perform scalable data processing. Spark transforms the extracted dataset by cleaning, enriching, and aggregating large volumes of sales data. The results are written back into the Airflow output directory for further analytics and dashboarding.
+
+**Features:**
+Distributed computation using Spark
+Automatic integration with Airflow DAG
+Product-level sales aggregation
+Output stored in structured CSV partitions
+
+**Files Added:**
+spark_processing.py
+Updated Airflow DAG with a Spark task
+
