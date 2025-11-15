@@ -57,3 +57,28 @@ Output stored in structured CSV partitions
 spark_processing.py
 Updated Airflow DAG with a Spark task
 
+
+
+
+# Cloud Integration (AWS/GCP)
+This module focuses on connecting the ETL pipeline to cloud platforms, deploying data storage, and enabling end-to-end automated workflows. I worked with AWS (S3, Glue, Redshift) and GCP (BigQuery, Cloud Storage) to move cleaned data from local processing into scalable cloud environments.
+
+**What I Built**
+Created S3 buckets to store raw & processed datasets.
+Uploaded cleaned data from the ETL pipeline into S3 using Boto3.
+Configured AWS Glue jobs to transform data inside the cloud.
+Loaded data into Redshift for analytics and BI dashboards.
+On GCP, I replicated a similar flow using Cloud Storage and BigQuery.
+
+**Files Included**
+aws_upload.py – Script to upload dataset to S3
+gcp_upload.py – Script to upload dataset to Google Cloud Storage
+
+**Tech Stack**
+AWS: S3, IAM, Glue, Redshift, Boto3
+GCP: Cloud Storage, BigQuery, gcloud SDK
+Python: boto3, google-cloud-storage
+ETL Tools: Airflow, Spark
+
+**Summary**
+This day completes the pipeline by pushing transformed data into cloud storage and databases, enabling dashboarding, automation, and large-scale analytics. It sets the foundation for a fully deployable real-world data engineering project.
